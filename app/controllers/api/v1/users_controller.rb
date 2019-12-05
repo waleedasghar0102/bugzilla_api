@@ -6,14 +6,11 @@ class UsersController < ApplicationController
   def index
   
     @type = params[:type]
-      byebug
     if @type=='Qa'
         @q=Qa.all
         render json:@q
-        byebug
     elsif @type=='Developer'
         @d=Developer.all
-        byebug
         render json:@d
   end
 
