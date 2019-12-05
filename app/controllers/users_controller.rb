@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show ,:edit ,:update ,:destroy]
   def index
     Qa.all
-  	byebug
   end
 
 
@@ -56,8 +55,4 @@ class UsersController < ApplicationController
    	params.require(:person).permit(:type ) #why here the table name is singular even in db it is plural
 
    end
-
-
-end
-end
 end
