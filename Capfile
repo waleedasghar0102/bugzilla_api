@@ -17,7 +17,6 @@ install_plugin Capistrano::SCM::Git
 require 'capistrano/rvm'
 require 'capistrano/bundler'
 require 'capistrano/rails/migrations'
-require 'capistrano/rails/assets' 
 require 'capistrano/puma'
 
 # Include tasks from other gems included in your Gemfile
