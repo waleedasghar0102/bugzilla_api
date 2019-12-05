@@ -11,10 +11,17 @@ gem 'rack-cors'
 gem 'puma', '~> 3.11'
 gem 'pundit'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails' #Should already be in your Gemfile
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
 
 group :development do

@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_10_21_105147) do
     t.bigint "developer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "assignedTo"
     t.string "bugType"
     t.index ["developer_id"], name: "index_bugs_on_developer_id"
     t.index ["project_id"], name: "index_bugs_on_project_id"
